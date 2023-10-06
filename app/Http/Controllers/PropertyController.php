@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Properties;
-use App\Http\Requests\StorePropertiesRequest;
-use App\Http\Requests\UpdatePropertiesRequest;
+use App\Models\Property;
+use App\Http\Requests\StorePropertyRequest;
+use App\Http\Requests\UpdatePropertyRequest;
 
-class PropertiesController extends Controller
+class PropertyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class PropertiesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePropertiesRequest $request)
+    public function store(StorePropertyRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class PropertiesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Properties $properties)
+    public function show(Property $property)
     {
         //
     }
@@ -43,7 +43,7 @@ class PropertiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Properties $properties)
+    public function edit(Property $property)
     {
         //
     }
@@ -51,7 +51,7 @@ class PropertiesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePropertiesRequest $request, Properties $properties)
+    public function update(UpdatePropertyRequest $request, Property $property)
     {
         //
     }
@@ -59,7 +59,7 @@ class PropertiesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Properties $properties)
+    public function destroy(Property $property)
     {
         //
     }
