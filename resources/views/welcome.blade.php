@@ -1,6 +1,6 @@
 <x-lays>
     <div>
-        <p class="bg-gray-500 rounde">Welcome to our wesite</p>
+        <p class="font-title text-7xl text-accent-600">Welcome to our wesite</p>
     </div>
 
 
