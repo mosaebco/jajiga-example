@@ -7,7 +7,7 @@
                 <div class="mt-4 text-2xl text-secondary-600">travel everywhere, don't worry for the place.</div>
 
                 <div class="mt-20">
-                    <a href="#" class="px-10 py-5 text-2xl font-semibold rounded-xl bg-brown-300 text-brown-800 hover:bg-brown-400 hover:text-brown-900">Create My Blog</a>
+                    {{-- <a href="#" class="px-10 py-5 text-2xl font-semibold rounded-xl bg-brown-300 text-brown-800 hover:bg-brown-400 hover:text-brown-900">Create My Blog</a> --}}
                 </div>
             </div>
 
@@ -18,6 +18,10 @@
     </div>
     {{-- End Hero section --}}
 
+
+    <div>
+
+    </div>
 
     <x-slot name="footer">
         All Rights Reserved &copy; {{ now()->year }}
