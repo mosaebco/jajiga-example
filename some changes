@@ -1,0 +1,96 @@
+[33mcommit c46a5ab72ddd6a87d6e6a601052bdc79ccb09428[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Wed Oct 25 00:29:48 2023 +0330
+
+    fixing color issue
+
+[33mcommit 86cac379cf112907be228a0edf598fb4bfd6ec79[m
+Merge: 91f226d 86f927f
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Mon Oct 23 23:53:20 2023 +0330
+
+    Merge branch 'main' of https://github.com/mosaebco/jajiga-example
+
+[33mcommit 91f226d103b18b291f433035e2b7b808b98b6aa6[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Mon Oct 23 23:44:28 2023 +0330
+
+    just some bg changes
+
+[33mcommit 8d4b729ec235c4f2f40ee31599bab502329c1956[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sun Oct 22 16:36:12 2023 +0330
+
+    fix the bug and change a route name
+
+[33mcommit 86f927f61711f7c31ebaebfa59bf6955a37c246d[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sun Oct 22 16:36:12 2023 +0330
+
+    fix the bug and change a route name
+
+[33mcommit 11e6dd65228dc09e19b9439b422b3215e52802c4[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sat Oct 21 02:26:47 2023 +0330
+
+    adding boxes to register page/has bugs
+
+[33mcommit 4eca1f19f3e19f861baa2f3e4212d738a4d576a6[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Fri Oct 20 21:04:21 2023 +0330
+
+    some changes
+
+[33mcommit 40c12c165945f0f4683fc2b344756665cac9ef6f[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Fri Oct 20 20:45:13 2023 +0330
+
+    working on first page
+
+[33mcommit 9ac0a587a63f15ac5d81f0e870c05804293d752a[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sun Oct 15 23:03:16 2023 +0330
+
+    nothing
+
+[33mcommit be41228499481e61d0560a163cafda89dd9a3a28[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sat Oct 14 23:18:16 2023 +0330
+
+    creating a layout for the first page
+
+[33mcommit 240751806edff0fc8eaa70f719d318045ccfe188[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sat Oct 14 18:35:55 2023 +0330
+
+    adding home component
+
+[33mcommit e41da43fa01eb41465bbdcfa4a40c89762c8d0f2[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Wed Oct 11 23:53:36 2023 +0330
+
+    change tables name
+
+[33mcommit d93f44f76243deeb894c5339ec2a9968642a596c[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Sat Oct 7 00:52:02 2023 +0330
+
+    changing some files and adding city model and rels
+
+[33mcommit 34becd9c7cd3fb1d8d0edc372416e7e6684548ee[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Fri Oct 6 23:59:35 2023 +0330
+
+    adding user and property tables
+
+[33mcommit e5b6397b6ad8f25ef7b537bccaa4773ff65b7dec[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Fri Oct 6 01:14:38 2023 +0330
+
+    Install Breeze
+
+[33mcommit cce1ef37e528070462f1e7b73d476e061d9da999[m
+Author: mosaebco <mosaebco.1380@gmail.com>
+Date:   Fri Oct 6 01:13:16 2023 +0330
+
+    Set up a fresh Laravel app
