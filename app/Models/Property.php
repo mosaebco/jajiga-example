@@ -16,6 +16,7 @@ class Property extends Model
         'image',
         'description',
         'price',
+        'city',
     ];
 
     public function user(): BelongsTo
