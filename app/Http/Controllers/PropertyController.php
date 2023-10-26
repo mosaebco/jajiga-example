@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Property;
+use App\Models\City;
 use App\Http\Requests\StorePropertyRequest;
 use App\Http\Requests\UpdatePropertyRequest;
 
@@ -17,7 +18,9 @@ class PropertyController extends Controller
     
     public function create()
     {
-        return view('property.create');
+        return view('property.create', [
+            'cities' => City::all(),
+        ]);
     }
 
     

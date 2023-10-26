@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::middleware('auth')->group(function () {
     Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
+    Route::post('/property/create', [PropertyController::class, 'store'])->name('property.store');
     
 });
 
