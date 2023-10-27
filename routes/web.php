@@ -29,8 +29,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 Route::middleware('auth')->group(function () {
-    Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
-    Route::post('/property/create', [PropertyController::class, 'store'])->name('property.store');
+    // Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
+    // Route::post('/property', [PropertyController::class, 'store'])->name('property.store');
+    Route::resource('property', PropertyController::class);
     
 });
 

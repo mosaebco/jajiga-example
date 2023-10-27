@@ -26,7 +26,11 @@ class PropertyController extends Controller
     
     public function store(StorePropertyRequest $request)
     {
-        //
+        // $validated = validate() = [
+
+        // ]
+        dd($request);
+        // return to_route('dashboard');
     }
 
 

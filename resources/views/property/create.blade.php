@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-primary-200 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-text-900">
-                    <form method="post" action="{{ route('property.store') }}" enctype="multipart/form-data" class="mt-6 space-y-6">
+                    <form method="POST" action="{{ route('property.store') }}" enctype="multipart/form-data" class="mt-6 space-y-6">
                         @csrf
 
                         <div>
@@ -48,16 +48,16 @@
                             <x-input-error class="mt-2" :messages="$errors->get('published_at')" />
                         </div> --}}
 
-                        <div>
+                        {{-- <div>
                             <x-input-label for="city" :value="__('City')" />
                             <x-text-input id="city" name="city" type="text" class="mt-1 block w-full" :value="old('city')" />
                             <x-input-error class="mt-2" :messages="$errors->get('city')" />
-                        </div>
+                        </div> --}}
 
                         <div class="flex items-center gap-4">
                             <x-link-button-gray href="{{ route('dashboard') }}">Go Back</x-link-button-gray>
 
-                            <x-primary-button>{{ __('Save') }}</x-primary-button>
+                            <x-primary-button>{{ __('Submit') }}</x-primary-button>
                         </div>
                     </form>
                 </div>
