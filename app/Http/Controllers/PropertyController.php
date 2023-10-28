@@ -26,11 +26,16 @@ class PropertyController extends Controller
     
     public function store(StorePropertyRequest $request)
     {
-        // $validated = validate() = [
+       
+        // dd($request);
 
-        // ]
-        dd($request);
-        // return to_route('dashboard');
+        $request -> user() -> properties() -> create([
+            'image' => $request -> file('image') -> store('property-image', 'public'),
+            'description' => $request -> input('description'),
+            'price' => $request -> input('price'),
+            'city_id' => $request -> input('city_id'),
+        ]);
+        return to_route('dashboard');
     }
 
 

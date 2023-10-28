@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 
 class StorePropertyRequest extends FormRequest
 {
@@ -15,10 +16,13 @@ class StorePropertyRequest extends FormRequest
     }
 
    
-    public function rules(): array
+    public function rules(Request $request): array
     {
         return [
-            //
+            'image' => 'required|image|mimes:png,jpg,jpeg|max:5000',
+            'description' => 'required|max:255|min:10',
+            'price' => 'required',
+            // 'city_id' => 'required',
         ];
     }
 }
