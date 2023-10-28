@@ -18,6 +18,7 @@ class PropertyController extends Controller
     
     public function create()
     {
+        // dd(City::all());
         return view('property.create', [
             'cities' => City::all(),
         ]);
@@ -27,13 +28,13 @@ class PropertyController extends Controller
     public function store(StorePropertyRequest $request)
     {
        
-        // dd($request);
+        // dd($request -> city_id);
 
         $request -> user() -> properties() -> create([
             'image' => $request -> file('image') -> store('property-image', 'public'),
             'description' => $request -> input('description'),
             'price' => $request -> input('price'),
-            'city_id' => $request -> input('city_id'),
+            'city_id' => $request -> input('city_id') ?? '1',
         ]);
         return to_route('dashboard');
     }

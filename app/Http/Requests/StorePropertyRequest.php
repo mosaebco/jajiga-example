@@ -22,7 +22,7 @@ class StorePropertyRequest extends FormRequest
             'image' => 'required|image|mimes:png,jpg,jpeg|max:5000',
             'description' => 'required|max:255|min:10',
             'price' => 'required',
-            // 'city_id' => 'required',
+            'city_id' => 'required',
         ];
     }
 }
