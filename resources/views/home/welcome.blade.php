@@ -18,7 +18,24 @@
     </div>
     {{-- End Hero section --}}
 
-
+    {{-- properties section --}}
+    {{-- <x-home.section title="properties">
+        <div class="flex mt-16 gap-12">
+            @foreach ($properties as $property)
+                <x-home.property-card :$property />
+                
+            @endforeach
+        </div>
+    </x-home> --}}
+    <x-home.section title="properties">
+        @foreach ($properties as $propertyChunk)
+            <div class="flex mt-16 gap-12">
+                @foreach ($propertyChunk as $property)
+                    <x-home.property-card :property="$property" />
+                @endforeach
+            </div>
+        @endforeach
+    </x-home.section>
     <div>
 
     </div>
