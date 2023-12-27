@@ -9,7 +9,15 @@
         </div>
 
         <div class="mt-2 text-xl font-semibold">
-            {{ $property->title }}
+            {{ $property->description }}
+        </div>
+
+        <div class="px-3 py-1 rounded-md  font-semibold">
+            price: {{ $property->price }}
+        </div>
+
+        <div class="px-3 py-1 rounded-md inline-flex bg-primary-100 text-primary-400 font-semibold">
+            {{ $property->city->name }}
         </div>
 
         <div class="mt-2 text-sm text-gray-400 font-semibold">

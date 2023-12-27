@@ -10,7 +10,7 @@ class SiteController extends Controller
     public function index()
     {
         return view('home.welcome',[
-            'properties' => Property::all()->chunk(3), 
+            'properties' => Property::all()->chunk(3),
         ]);
     }
 }

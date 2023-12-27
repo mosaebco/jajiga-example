@@ -24,8 +24,8 @@ class Property extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function city(): HasOne
+    public function city(): BelongsTo
     {
-        return $this->hasOne(City::class);
+        return $this->belongsTo(City::class);
     }
 }
