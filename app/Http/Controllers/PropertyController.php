@@ -6,6 +6,7 @@ use App\Models\Property;
 use App\Models\City;
 use App\Http\Requests\StorePropertyRequest;
 use App\Http\Requests\UpdatePropertyRequest;
+use Illuminate\Http\Request;
 
 class PropertyController extends Controller
 {
@@ -18,7 +19,6 @@ class PropertyController extends Controller
     
     public function create()
     {
-        // dd(City::all());
         return view('property.create', [
             'cities' => City::all(),
         ]);
@@ -63,5 +63,23 @@ class PropertyController extends Controller
     public function destroy(Property $property)
     {
         //
+    }
+
+    public function reservation(Property $property)
+    {
+        return view('property.reservation', [
+            'property' => $property,
+        ]);
+    }
+
+    public function storeReservation(Request $request, Property $property)
+    {
+        $request -> user() -> reservations() -> create([
+            'total_days' => $request -> input('total_days'),
+            'total_price' => $property->price * $request -> input('total_days'),
+            'property_id' => $property -> id,
+            'user_id' => $request -> user() -> id,
+        ]);
+        return to_route('dashboard');
     }
 }

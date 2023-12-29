@@ -11,7 +11,7 @@
                         <p class="card-text mt-4">Price: ${{ $property->price }}</p>
                         <p class="card-text mt-4 mb-5">Location: {{ $property->city->name }}</p>
                         <a href="{{ route('home') }}" class=" text-gray-200 bg-primary-600 hover:bg-primary-700 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">Back</a>
-                        <a href="{{ route('property.create') }}" class=" text-gray-200 bg-primary-600 hover:bg-primary-700 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">Reserve</a>
+                        <a href="{{ route('property.reservation', ['property' => $property]) }}" class=" text-gray-200 bg-primary-600 hover:bg-primary-700 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none">Reserve</a>
                     </div>
                     <x-slot name="footer">
                         All Rights Reserved &copy; {{ now()->year }}

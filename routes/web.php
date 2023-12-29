@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard', [
+        'reservations' => auth()->user()->reservations()->get(),
+        'properties' => auth()->user()->properties()->get(),
+    ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -27,6 +30,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('property', PropertyController::class);
+    Route::get('/property/{property}/reservation', [PropertyController::class, 'reservation'])->name('property.reservation');
+    Route::post('/property/{property}/reservation', [PropertyController::class, 'storeReservation'])->name('property.storeReservation');
 });
 // Route::middleware('auth')->group(function () {
 //     Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');

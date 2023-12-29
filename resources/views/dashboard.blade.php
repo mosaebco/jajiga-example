@@ -10,7 +10,15 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{-- {{ __("You're logged in!") }} --}}
-
+                    {{-- <x-home.section title="reservations">
+                        @foreach ($reservations as $reservationChunk)
+                            <div class="flex mt-16 gap-12">
+                                @foreach ($reservationChunk as $reservation)
+                                    <x-home.property-card :property="$reservation" />
+                                @endforeach
+                            </div>
+                        @endforeach
+                    </x-home.section> --}}
 
                 </div>
             </div>
