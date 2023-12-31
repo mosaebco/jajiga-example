@@ -19,7 +19,7 @@
                             </div>
                         @endforeach
                     </x-home.section> --}}
-                    {{ dd($properties) }}
+                    {{-- {{ dd($properties) }} --}}
                     <x-home.section title="reservations">
                         @foreach ($properties as $propertyChunk)
                             <div class="flex mt-16 gap-12">

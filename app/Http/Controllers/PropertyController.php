@@ -88,7 +88,7 @@ class PropertyController extends Controller
         // $properties = Property::whereHas('reservations')->get();
         $properties = Property::whereHas('reservations', function ($query) {
             $query->where('user_id', auth()->user()->id);
-        })->get();
+        })->get()->chunk(3);
 
         return view('dashboard', [
             'properties' => $properties,
