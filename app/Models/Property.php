@@ -28,4 +28,9 @@ class Property extends Model
     {
         return $this->belongsTo(City::class);
     }
+
+    public function reservations(): HasMany
+    {
+        return $this->hasMany(Reservations::class, 'property_id');
+    }
 }
