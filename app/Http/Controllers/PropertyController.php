@@ -82,4 +82,16 @@ class PropertyController extends Controller
         ]);
         return to_route('dashboard');
     }
+
+    public function dashboard()
+    {
+
+        return view('dashboard', [
+            'properties' => Property::all(),
+        ]);
+        // return view('dashboard', [
+        //     'reservations' => reservationauth()->user()->reservations()->get(),
+        //     'properties' => auth()->user()->properties()->where()->get()->chunk(3),
+        // ]);
+    }
 }

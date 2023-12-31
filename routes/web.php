@@ -18,12 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
 
-Route::get('/dashboard', function () {
-    return view('dashboard', [
-        'reservations' => auth()->user()->reservations()->get(),
-        'properties' => auth()->user()->properties()->get(),
-    ]);
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [PropertyController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

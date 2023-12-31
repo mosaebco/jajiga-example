@@ -19,7 +19,15 @@
                             </div>
                         @endforeach
                     </x-home.section> --}}
-
+                    <x-home.section title="reservations">
+                        @foreach ($properties as $propertyChunk)
+                            <div class="flex mt-16 gap-12">
+                                @foreach ($propertyChunk as $property)
+                                    <x-home.property-card :property="$property" />
+                                @endforeach
+                            </div>
+                        @endforeach
+                    </x-home.section>
                 </div>
             </div>
         </div>
